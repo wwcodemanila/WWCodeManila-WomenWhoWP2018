@@ -1,26 +1,31 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import { Jumbotron, Button } from "reactstrap";
+
+const repository =
+  "https://docs.google.com/presentation/d/1z3XGsAQzCW66UKmf6ObbgkddTIc2TveFgkHSAaY9lFg/edit#slide=id.g43f5d69b4a_0_8";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
+      <React.Fragment>
+        <Jumbotron>
+          <h1 className="display-3">Hello, Women Who Code Manila!</h1>
+          <p className="lead">
+            Together we'll create the new landing page for{" "}
+            <strong>manila.womenwhocode.com</strong>. We'll use{" "}
+            <strong>ReactJS</strong> in this activity.
           </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+          <hr className="my-2" />
+          <p>Happy hacking!</p>
+          <p className="lead">
+            <Button outline color="primary">
+              <a href={repository} target="__blank">
+                Learn More
+              </a>
+            </Button>
+          </p>
+        </Jumbotron>
+      </React.Fragment>
     );
   }
 }
