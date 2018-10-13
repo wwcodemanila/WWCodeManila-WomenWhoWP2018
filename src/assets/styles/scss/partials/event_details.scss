@@ -1,4 +1,6 @@
 .event-details {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -10,9 +12,9 @@
 .event-details h2 {
   font-size: 16px;
   margin-bottom: 0px;
+  line-height: 1.5;
 }
 
 .event-details p {
   font-size: 12px;
-  font-weight: bold;
 }
