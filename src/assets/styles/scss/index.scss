@@ -1,2 +1,12 @@
-@import "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css";
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css");
 @import "./modules/__variables.scss";
+
+.primary {
+	color: #007a7c;
+	font-weight: 800;
+}
+
+.footer {
+	background: gray;
+	padding: 50px;
+}
