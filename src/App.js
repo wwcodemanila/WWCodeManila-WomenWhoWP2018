@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Jumbotron, Button } from "reactstrap";
+import About from "components/About";
 
 const repository =
   "https://docs.google.com/presentation/d/1z3XGsAQzCW66UKmf6ObbgkddTIc2TveFgkHSAaY9lFg/edit#slide=id.g43f5d69b4a_0_8";
@@ -25,6 +26,7 @@ class App extends Component {
             </Button>
           </p>
         </Jumbotron>
+        <About />
       </React.Fragment>
     );
   }
