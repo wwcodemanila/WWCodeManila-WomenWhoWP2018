@@ -1,4 +1,15 @@
 @import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css");
+@import "./modules/__variables.scss";
+
+.primary {
+	color: #007a7c;
+	font-weight: 800;
+}
+
+.footer {
+	background: gray;
+	padding: 50px;
+}
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500');
 @import "./modules/__variables.scss";
 @import "./partials/event_details.scss";

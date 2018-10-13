@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Jumbotron, Button } from "reactstrap";
+import Footer from "./components/Footer"
 import Navigation from "./components/Navigation.js";
 import Banner from "./components/Banner.js";
 import About from "./components/About";
@@ -12,6 +13,7 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
+        <Footer/>
         <Navigation/>
         <Banner/>
         <EventDetails />
