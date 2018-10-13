@@ -41,7 +41,7 @@ class EventDetails extends Component {
 
     for (let i = 0; i < eventDetails.length; i++) {
       let eventDetail = eventDetails[i];
-      output.push(<EventDetail icon={eventDetail.icon} alt={eventDetail.alt} heading={eventDetail.heading} paragraph={eventDetail.paragraph} />)
+      output.push(<EventDetail key={i} icon={eventDetail.icon} alt={eventDetail.alt} heading={eventDetail.heading} paragraph={eventDetail.paragraph} />)
     }
 
     return output;
