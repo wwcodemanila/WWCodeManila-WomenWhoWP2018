@@ -1,5 +1,4 @@
-import React from 'react';
-import Logo from '../assets/images/logo.jpeg';
+import React, { Component } from "react";
 import {
   Collapse,
   Navbar,
@@ -7,13 +6,26 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem } from 'reactstrap';
+  NavLink
+} from "reactstrap";
+import logo from "../assets/images/logo.jpeg";
 
-export default class Example extends React.Component {
+const navLinks = [
+  {
+    title: "Home",
+    url: "/"
+  },
+  {
+    title: "About",
+    url: "#about"
+  },
+  {
+    title: "Event Details",
+    url: "#eventDetails"
+  }
+];
+
+class Navigation extends Component {
   constructor(props) {
     super(props);
 
@@ -31,20 +43,17 @@ export default class Example extends React.Component {
     return (
       <div>
         <Navbar color="light" light expand="md">
-          <NavbarBrand href="/"><img src={Logo}/></NavbarBrand>
+          <NavbarBrand href="/">
+            <img src={logo} alt="Women Who Code Manila" width="120px" />
+          </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
-              <NavItem>
-                <NavLink href="/components/">Home</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">About</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">Events</NavLink>
-              </NavItem>
-              
+              {navLinks.map((link, index) => (
+                <NavItem key={index}>
+                  <NavLink href={link.url}>{link.title}</NavLink>
+                </NavItem>
+              ))}
             </Nav>
           </Collapse>
         </Navbar>
@@ -52,3 +61,5 @@ export default class Example extends React.Component {
     );
   }
 }
+
+export default Navigation;

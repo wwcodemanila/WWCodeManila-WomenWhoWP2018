@@ -1,15 +1,10 @@
-import React from 'react';
-import Banner from '../assets/images/banner.png';
-import {
-   } from 'reactstrap';
+import React from "react";
+import banner from "../assets/images/banner.png";
 
-export default class Example extends React.Component {
-  
-  render() {
-    return (
-      <div>
-        <img src={Banner} width="100%"/>
-      </div>
-    );
-  }
-}
+const Banner = () => (
+  <div>
+    <img src={banner} alt="banner" width="100%" />
+  </div>
+);
+
+export default Banner;
