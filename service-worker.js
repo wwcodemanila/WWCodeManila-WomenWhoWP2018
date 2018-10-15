@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/women-who-wordpress-2018/precache-manifest.265a68773394afcad77e7ec2df36cc41.js"
+  "/WWCodeManila-WomenWhoWP2018/precache-manifest.f1ce1e567f3253851fa0785709d3cbbb.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/women-who-wordpress-2018/index.html", {
+workbox.routing.registerNavigationRoute("/WWCodeManila-WomenWhoWP2018/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
