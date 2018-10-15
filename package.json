@@ -23,7 +23,7 @@
     "dev": "concurrently \"yarn watch-css\" \"yarn start\"",
     "start": "NODE_PATH=src/ react-scripts start",
     "predeploy": "yarn build-css && react-scripts build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -b master -d build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
@@ -39,5 +39,5 @@
   "devDependencies": {
     "concurrently": "^4.0.1"
   },
-  "homepage": "https://wwcodemanila.github.io/women-who-wordpress-2018"
+  "homepage": "https://wwcodemanila.github.io/WWCodeManila-WomenWhoWP2018/"
 }
